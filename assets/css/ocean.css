@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --font-family: "Poppins", serif;
+    --primary-color: #BABABA;
+    --secondary-color: #8EA7E9;
+    --third-color: #E5E0FF38;
+    --fourth-color: #FFF2F9;
+    --fifth-color: #19192C;
+    --sixth-color: #D9D9D9;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    display: flex;
+    size: 100%;
+    gap: 6rem;
+  }
+  
+  .left {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    width: 55vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+  }
+  
+  .left .illustration {
+    height: 80vh;
+    margin: auto;
+  }
+  
+  .right {
+    flex: 1;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+    padding: rem;
+  }
+  
+  h1 {
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--fifth-color);
+    line-height: 60px;
+  }
+  
+  form {
+    margin-top: 45px;
+    width: 35vw;
+    height: 10vh;
+  }
+  
+  .input-group {
+    padding: 13px;
+  }
+  .input-group .input {
+    display: flex;
+    border: solid 1px var(--fifth-color);
+    border-radius: 20px;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .input-group .input .ico{
+    width: 5rem;
+    height: 1.5rem;
+  }
+  .input-group label {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    color: var(--fifth-color);
+  }
+ 
+  
+  .input-group input {
+    width: 560px;
+    height: 36px;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  
+  .forgot-password {
+    display: block;
+    color: #6c63ff;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+  }
+  
+  .btn {
+    width: 210px;
+    height: 59px;
+    margin-top: 40px;
+    padding: 10px;
+    margin-left: 185px;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #5a54d6;
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 14px;
+    color: #aaa;
+    position: relative;
+  }
+  
+  .divider span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: #ddd;
+    z-index: 0;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 90px;
+    border: solid .5px;
+    border-radius: 50%;
+    background-color: #fff5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.circle img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 430px) {
+    .container {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+  
+    .left {
+      display: none;
+    }
+  
+    /* .right {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    input {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+    }
+  
+    .social-buttons .circle {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .social-buttons .circle img {
+      width: 40%;
+      height: 40%;
+    } */
+  }
+
+  
