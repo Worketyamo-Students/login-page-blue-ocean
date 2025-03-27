@@ -46,7 +46,8 @@
     align-items: center;
     height: 50vh;
     justify-content: center;
-    padding: rem;
+    padding-left: 4rem;
+    padding-top: 4rem;
   }
   
   h1 {
