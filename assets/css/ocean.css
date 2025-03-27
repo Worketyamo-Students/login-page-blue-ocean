@@ -113,7 +113,7 @@
     height: 59px;
     margin-top: 40px;
     padding: 10px;
-    margin-left: 185px;
+    margin-left: 225px;
     background-color: #6c63ff;
     color: #fff;
     border: none;
@@ -176,9 +176,11 @@
 }
 
 @media only screen and (max-width: 430px) {
+    
     .container {
       flex-direction: column;
       width: 100%;
+      padding: 20px;
       height: auto;
     }
   
@@ -188,28 +190,88 @@
   
     .right {
       padding: 20px;
+      height: 100%;
+      width: 90%;
     }
   
     h1 {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
+    }
+
+    .input-group label {
+      display: block;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 5px;
+      color: var(--fifth-color);
+    }
+
+    .input-group input {
+      height: 36px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+    }
+    .input-group .input {
+      display: flex;
+      border: solid 1px var(--fifth-color);
+      border-radius: 10px;
+      width: 21rem;
+      align-items: center;
+      background-color: white;
+    }
+
+    ::placeholder {
+      visibility: hidden;
     }
   
     input {
       font-size: 0.9rem;
     }
+
+    .forgot-password {
+      width: 80vw;
+      color: #6c63ff;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: right;
+    }
   
     .btn {
       font-size: 0.9rem;
+      margin-left: 60px;
     }
+
+    .divider {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 18px;
+      color: #aaa;
+      width: 80vw;
+      position: relative;
+    }
+    
   
+    .social-buttons{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 20rem;
+    }
+
     .social-buttons .circle {
-      width: 40px;
-      height: 40px;
+      width: 60px;
+      height: 60px;
     }
   
     .social-buttons .circle img {
-      width: 40%;
-      height: 40%;
+      width: 70%;
+      height: 70%;
     }
   }
 
