@@ -260,8 +260,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 15px;
-      width: 21rem;
+      gap: 19px;
+      width: 21.5rem;
     }
 
     .social-buttons .circle {
